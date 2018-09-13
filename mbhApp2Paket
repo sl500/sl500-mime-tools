@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ "$#" -ne 0 ]
+  then
+	app=$1
+	pfad=$(which $app)
+	paket=$(dpkg -S $pfad)
+	echo $paket
+fi
