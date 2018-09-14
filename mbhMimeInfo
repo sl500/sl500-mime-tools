@@ -4,16 +4,21 @@ if [ "$#" -ne 0 ]
   then
         FILE=$1
         echo "--- ### FILE ### ---"
-        echo "file -i              :$(file -i  $FILE)"
-        echo "file --mime-type     :$(file --mime-type  $FILE)"
+        echo "file -i              : $(file -i  $FILE)"
+        echo "file --mime-type     : $(file --mime-type  $FILE)"
 
         echo "--- mimetype von libfile-mimeinfo-perl  -> perl script aus /usr/bin/mimetype ---"
-        echo "### mimetype -b brief: $( mimetype -b $FILE)"
-        echo "### mimetype -d desc : $( mimetype -d $FILE)"
-        echo "### mimetype -M Magic: $( mimetype -M $FILE)"
-        echo "### mimetype -D debug:"
+        echo "### mimetype -b brief : $( mimetype -b $FILE)"
+        echo "### mimetype -d desc  : $( mimetype -d $FILE)"
+        echo "### mimetype -M Magic : $( mimetype -M $FILE)"
+        echo "### mimetype -D debug :"
         echo "$( mimetype -D $FILE)"
 
         echo "--- xdg-mime von xdg-utils ->eigentlich:  kmimetypefinder5  binär aus Paket kde-cli-tools---"
-        echo "### xdg-mime Q file2mime:$( xdg-mime query filetype $FILE)"
+        echo "### xdg-mime Q file2mime : $( xdg-mime query filetype $FILE)"
+        
+	echo "--- kmimetypefinder5  binär aus Paket kde-cli-tools (default = xdg-mime) ---"
+        echo "### kmimetypefinder5 default=(c + f) : $( kmimetypefinder5 $FILE)"
+        echo "### kmimetypefinder5 -c content      : $( kmimetypefinder5 -c $FILE)"
+        echo "### kmimetypefinder5 -f filename/ext : $( kmimetypefinder5 -f $FILE)"
 fi
