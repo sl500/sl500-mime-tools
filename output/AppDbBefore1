@@ -1,0 +1,27 @@
+####################################################################################### projectlibre.desktop in EVERYWHERE
+searchForAppsInEveryKnownRelevantPlace BEGIN:
+
+=======================================================================================  projectlibre.desktop in MIMEAPPS LISTS
+searchForStringInMimeappsLists BEGIN:
+search /usr/share/applications/mimeapps.list:
+3:application/mpp=projectlibre.desktop
+12:application/vnd.ms-project=projectlibre.desktop
+13:application/vnd.ms-project-xml=projectlibre.desktop
+46:application/x-planner=projectlibre.desktop
+47:application/x-projectlibre=projectlibre.desktop
+178:application/mpp=projectlibre.desktop
+184:application/vnd.ms-project=projectlibre.desktop;
+185:application/vnd.ms-project-xml=projectlibre.desktop;
+203:application/x-planner=projectlibre.desktop;
+204:application/x-projectlibre=projectlibre.desktop;
+
+search /etc/xdg/mimeapps.list:
+searchForStringInMimeappsLists END!
+
+============================================================== projectlibre.desktop in desktop-links
+/home/mbh_wollmux/.goto/desktop-links/projectlibre.desktop
+
+============================================================== projectlibre.desktop in applications
+/usr/share/applications/projectlibre.desktop
+
+END!

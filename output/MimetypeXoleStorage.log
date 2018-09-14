@@ -1,0 +1,32 @@
+####################################################################################### application/x-ole-storage in EVERYWHERE
+searchForMimetypeInEveryKnownRelevantPlace BEGIN:
+
+======================================================================================= application/x-ole-storage in GLOBS2
+searchForStringInGlobs2 BEGIN:
+search /usr/share/mime/globs2:
+
+
+searchForStringInGlobs2 END!
+
+=======================================================================================  application/x-ole-storage in MIMEAPPS LISTS
+searchForStringInMimeappsLists BEGIN:
+search /usr/share/applications/mimeapps.list:
+
+search /etc/xdg/mimeapps.list:
+searchForStringInMimeappsLists END!
+
+=======================================================================================DESKTOP FILES
+searchForMimetypeInDesktopFiles BEGIN:
+search /usr/share/applications/:
+
+search ~/.goto/desktop-links/:
+searchForMimetypeInDesktopFiles END!
+
+======================================================================================= application/x-ole-storage in XML
+searchForStringInMimePackagesXmlFiles BEGIN:
+search /usr/share/mime/packages/:
+
+
+searchForStringInMimePackagesXmlFiles END!
+
+END!

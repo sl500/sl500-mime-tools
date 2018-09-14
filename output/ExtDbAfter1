@@ -1,0 +1,27 @@
+##################################################################################################  *.mpp in EVERYWHERE
+searchiForExtensionInEveryKnownRelevantPlace BEGIN:
+
+======================================================================================= *.mpp in GLOBS2
+searchForStringInGlobs2 BEGIN:
+search /usr/share/mime/globs2:
+
+1257:50:audio/x-musepack:*.mpp
+1258:50:application/vnd.ms-project:*.mpp
+1259:50:application/vnd.ms-project:*.mpp
+1307:40:application/vnd.ms-project-Typ:*.mpp
+1308:40:application/vnd.ms-project-Typ:*.mpp
+
+searchForStringInGlobs2 END!
+
+======================================================================================= *.mpp in XML
+searchForStringInMimePackagesXmlFiles BEGIN:
+search /usr/share/mime/packages/:
+
+/usr/share/mime/packages/lhm-vnd_ms-project-Typ.xml:12:    <glob pattern="*.mpp"/>
+/usr/share/mime/packages/lhm-vnd_ms-project-Typ.xml:13:    <glob pattern="*.MPP"/>
+/usr/share/mime/packages/lhm-vnd_ms-project-Typ.xml:23:    <glob pattern="*.mpp" weight="40"/>
+/usr/share/mime/packages/lhm-vnd_ms-project-Typ.xml:24:    <glob pattern="*.MPP" weight="40"/>
+
+searchForStringInMimePackagesXmlFiles END!
+
+END!

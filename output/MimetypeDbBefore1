@@ -1,0 +1,38 @@
+####################################################################################### application/vnd.ms-project in EVERYWHERE
+searchForMimetypeInEveryKnownRelevantPlace BEGIN:
+
+======================================================================================= application/vnd.ms-project in GLOBS2
+searchForStringInGlobs2 BEGIN:
+search /usr/share/mime/globs2:
+
+
+searchForStringInGlobs2 END!
+
+=======================================================================================  application/vnd.ms-project in MIMEAPPS LISTS
+searchForStringInMimeappsLists BEGIN:
+search /usr/share/applications/mimeapps.list:
+12:application/vnd.ms-project=projectlibre.desktop
+13:application/vnd.ms-project-xml=projectlibre.desktop
+184:application/vnd.ms-project=projectlibre.desktop;
+185:application/vnd.ms-project-xml=projectlibre.desktop;
+
+search /etc/xdg/mimeapps.list:
+searchForStringInMimeappsLists END!
+
+=======================================================================================DESKTOP FILES
+searchForMimetypeInDesktopFiles BEGIN:
+search /usr/share/applications/:
+
+search ~/.goto/desktop-links/:
+searchForMimetypeInDesktopFiles END!
+
+======================================================================================= application/vnd.ms-project in XML
+searchForStringInMimePackagesXmlFiles BEGIN:
+search /usr/share/mime/packages/:
+
+/usr/share/mime/packages/lhm-vnd_ms-project-Typ.xml:3:  <mime-type type="application/vnd.ms-project">
+/usr/share/mime/packages/lhm-vnd_ms-project-Typ.xml:15:  <mime-type type="application/vnd.ms-project-Typ">
+
+searchForStringInMimePackagesXmlFiles END!
+
+END!
