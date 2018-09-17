@@ -14,7 +14,7 @@ if [ "$#" -ne 0 ]
         echo "### mimetype -D debug :"
         echo "$( mimetype -D $FILE)"
 
-        echo "--- xdg-mime von xdg-utils ->eigentlich:  kmimetypefinder5  binär aus Paket kde-cli-tools---"
+        echo "--- KDE LIMUX relevant! xdg-mime von xdg-utils ->eigentlich:  kmimetypefinder5  binär aus Paket kde-cli-tools---"
         echo "### xdg-mime Q file2mime : $( xdg-mime query filetype $FILE)"
         
 	echo "--- kmimetypefinder5  binär aus Paket kde-cli-tools (default = xdg-mime) ---"
