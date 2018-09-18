@@ -18,7 +18,7 @@ searchString=$1
 echo "##################################################################################################  $searchString in EVERYWHERE"
 echo "searchiForExtensionInEveryKnownRelevantPlace BEGIN:"
 echo ""
-. ./helper/searchForStringInGlobs2.sh $searchString
+. ./helper/searchForStringInBothGlobsFiles.sh $searchString
 echo ""
 . ./helper/searchForStringInMimePackagesXmlFiles.sh $searchString
 echo ""
