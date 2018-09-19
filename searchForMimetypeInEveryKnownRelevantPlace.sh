@@ -5,7 +5,7 @@ searchString=$1
 echo "####################################################################################### $searchString in EVERYWHERE"
 echo "searchForMimetypeInEveryKnownRelevantPlace BEGIN:"
 echo ""
-. ./helper/searchForStringInGlobs2.sh $searchString
+. ./helper/searchForStringInBothGlobsFiles.sh $searchString
 echo ""
 . ./helper/searchForStringInMimeappsLists.sh $searchString
 echo ""
